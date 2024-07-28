@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso de Datos</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2>Ingreso de Datos</h2>
+    <form id="infoForm">
+        <div class="form-group">
+            <label for="fullName">Nombre Completo:</label>
+            <input type="text" class="form-control" id="fullName" required>
+        </div>
+        <div class="form-group">
+            <label for="birthDate">Fecha de Nacimiento:</label>
+            <input type="date" class="form-control" id="birthDate" required>
+        </div>
+        <div class="form-group">
+            <label for="bloodType">Tipo Sanguíneo:</label>
+            <input type="text" class="form-control" id="bloodType" required>
+        </div>
+        <div class="form-group">
+            <label for="passportIssueDate">Fecha de Emisión del Pasaporte:</label>
+            <input type="date" class="form-control" id="passportIssueDate" required>
+        </div>
+        <div class="form-group">
+            <label for="passportExpiry">Fecha de Expiración del Pasaporte:</label>
+            <input type="date" class="form-control" id="passportExpiry" required>
+        </div>
+        <div class="form-group">
+            <label for="idIssueDate">Fecha de Emisión de la Cédula de Identidad:</label>
+            <input type="date" class="form-control" id="idIssueDate" required>
+        </div>
+        <div class="form-group">
+            <label for="idExpiry">Fecha de Expiración de la Cédula de Identidad:</label>
+            <input type="date" class="form-control" id="idExpiry" required>
+        </div>
+        <div class="form-group">
+            <label for="hasInsurance">¿Tiene Seguros Contratados?:</label>
+            <select class="form-control" id="hasInsurance" required>
+                <option value="">Seleccione una opción</option>
+                <option value="yes">Sí</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+        <div class="form-group" id="insuranceDetails" style="display: none;">
+            <label for="insurance">Detalles de los Seguros:</label>
+            <input type="text" class="form-control" id="insurance">
+        </div>
+        <div class="form-group">
+            <label for="hasLicense">¿Tiene Licencia de Conducir?:</label>
+            <select class="form-control" id="hasLicense" required>
+                <option value="">Seleccione una opción</option>
+                <option value="yes">Sí</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+        <div class="form-group" id="licenseDetails" style="display: none;">
+            <label for="licenseIssueDate">Fecha de Emisión de la Licencia:</label>
+            <input type="date" class="form-control" id="licenseIssueDate">
+            <label for="licenseExpiryDate">Fecha de Expiración de la Licencia:</label>
+            <input type="date" class="form-control" id="licenseExpiryDate">
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="script/index.js"></script>
+</body>
+</html>
+
+
